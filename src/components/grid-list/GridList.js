@@ -5,12 +5,6 @@ import listMap from '../../API/listsMap';
 
 const itemsList = [];
 
-function searchingFor(term) {
-  return function (x) {
-    return x.title.toLowerCase().includes(term.toLowerCase()) || !term;
-  };
-}
-
 export default class App extends Component {
   constructor(props) {
     super(props);
